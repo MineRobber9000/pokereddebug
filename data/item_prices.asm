@@ -5,7 +5,7 @@ ItemPrices:
 	money 200   ; POKE_BALL
 	money 0     ; TOWN_MAP
 	money 0     ; BICYCLE
-	money 0     ; SURFBOARD
+	money 0     ; DEBUG
 	money 1000  ; SAFARI_BALL
 	money 0     ; POKEDEX
 	money 0     ; MOON_STONE

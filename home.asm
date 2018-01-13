@@ -4719,3 +4719,6 @@ const_value = 1
 	add_tx_pre BookOrSculptureText                  ; 40
 	add_tx_pre ElevatorText                         ; 41
 	add_tx_pre PokemonStuffText                     ; 42
+
+FreeSpace::
+	ds $4000-$3fa6

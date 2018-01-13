@@ -1,5 +1,5 @@
 PYTHON := python
-MD5 := md5sum -c --quiet
+MD5 := md5sum -c
 
 2bpp     := $(PYTHON) extras/pokemontools/gfx.py 2bpp
 1bpp     := $(PYTHON) extras/pokemontools/gfx.py 1bpp
@@ -49,6 +49,6 @@ pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
 	sort $*.sym -o $*.sym
 
 %.png:  ;
-%.2bpp: %.png  ; @$(2bpp) $<
-%.1bpp: %.png  ; @$(1bpp) $<
-%.pic:  %.2bpp ; @$(pic)  $<
+%.2bpp: %.png  ; $(2bpp) $<
+%.1bpp: %.png  ; $(1bpp) $<
+%.pic:  %.2bpp ; $(pic)  $<

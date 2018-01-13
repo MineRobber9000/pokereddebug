@@ -156,6 +156,9 @@ ROMX $2B
 ROMX $2C
   "Move Names" ; MOVE_NAMES
 
+ROMX $2D
+  "Surf"
+
 WRAM0
   "WRAM Bank 0"
 

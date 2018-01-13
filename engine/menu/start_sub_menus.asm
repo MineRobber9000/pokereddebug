@@ -165,10 +165,7 @@ StartMenu_Pokemon:
 	bit 1,[hl]
 	res 1,[hl]
 	jp z,.loop
-	ld a,SURFBOARD
-	ld [wcf91],a
-	ld [wPseudoItemID],a
-	call UseItem
+	callba Surf
 	ld a,[wActionResultOrTookBattleTurn]
 	and a
 	jp z,.loop

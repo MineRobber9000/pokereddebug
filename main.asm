@@ -2094,3 +2094,7 @@ INCLUDE "engine/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 
 INCLUDE "engine/items/tm_prices.asm"
+
+SECTION "Surf",ROMX,BANK[$2D]
+
+INCLUDE "engine/overworld/surf.asm"
